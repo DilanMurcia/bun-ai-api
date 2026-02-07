@@ -1,12 +1,15 @@
+// ...existing code...
 import { groqService } from './services/groq';
 import { cerebrasService } from './services/cerebras';
+import { googleGeminiService } from './services/googleGemini';
+import { openrouterService } from './services/openRouter';
 import type { AIService, ChatMessage } from './types';
-
+// ...existing code...
 const services: AIService[] = [
   groqService,
   cerebrasService,
-  // Google Gemini
-  // OpenRouter
+  googleGeminiService,
+  openrouterService,
   // otro servicio incluso local
 ]
 let currentServiceIndex = 0;
